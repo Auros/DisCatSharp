@@ -51,7 +51,12 @@ namespace DisCatSharp.Entities
         /// <summary>
         /// Initializes a new instance of the <see cref="DiscordApplicationCommandPermission"/> class.
         /// </summary>
-        internal DiscordApplicationCommandPermission() { }
+        public DiscordApplicationCommandPermission(ulong id, ApplicationCommandPermissionType type, bool permission)
+        {
+            this.Id = id;
+            this.Type = type;
+            this.Permission = permission;
+        }
 
         /// <summary>
         /// Checks whether this <see cref="DiscordApplicationCommandPermission"/> object is equal to another object.

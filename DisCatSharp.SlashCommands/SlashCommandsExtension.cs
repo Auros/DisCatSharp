@@ -335,6 +335,8 @@ namespace DisCatSharp.SlashCommands
                         SubGroupCommands.AddRange(subGroupCommands);
 
                         _registeredCommands.Add(new KeyValuePair<ulong?, IReadOnlyList<DiscordApplicationCommand>>(guild_id, commands.ToList()));
+
+
                     }
                     catch (Exception ex)
                     {
